@@ -1,0 +1,49 @@
+2019-02-28 18:45:04.244 [main] INFO  Base.TestBase - Starting LimeLight test Thu Feb 28 18:45:04 EST 2019
+
+2019-02-28 18:45:07.927 [main] INFO  Base.TestBase - Launching Chrome browser
+
+2019-02-28 18:45:11.871 [main] INFO  TestCases.HomePageTest - Testing page header
+2019-02-28 18:45:12.114 [main] INFO  TestCases.HomePageTest - Test: HeaderTest == Passed
+2019-02-28 18:45:12.130 [main] INFO  TestCases.HomePageTest - Testing page banner
+2019-02-28 18:45:12.361 [main] INFO  TestCases.HomePageTest - Test: BannerTest == Passed
+2019-02-28 18:45:12.361 [main] INFO  TestCases.HomePageTest - Testing H1 header
+2019-02-28 18:45:13.649 [main] INFO  TestCases.HomePageTest - Test: H1Test == Passed
+2019-02-28 18:45:13.649 [main] INFO  TestCases.HomePageTest - Testing NewJersey image
+2019-02-28 18:45:13.864 [main] INFO  TestCases.HomePageTest - Test: NewJersyImgTest == Passed
+2019-02-28 18:45:13.864 [main] INFO  TestCases.HomePageTest - Testing LosAngeles image
+2019-02-28 18:45:14.099 [main] INFO  TestCases.HomePageTest - Test: LosAngelesImgTest == Passed
+2019-02-28 18:45:14.099 [main] INFO  TestCases.HomePageTest - Testing SanFrancisco image
+2019-02-28 18:45:14.333 [main] INFO  TestCases.HomePageTest - Test: SanFranciscoImgTest == Passed
+2019-02-28 18:45:14.533 [main] INFO  TestCases.HomePageTest - Test: NewJerseyTest == Passed
+2019-02-28 18:45:14.751 [main] INFO  TestCases.HomePageTest - Test: LosAngelesTest == Passed
+2019-02-28 18:45:14.969 [main] INFO  TestCases.HomePageTest - Test: SanFranciscoTest == Passed
+2019-02-28 18:45:15.166 [main] INFO  TestCases.HomePageTest - Test: RegisterBtnTest == Passed
+2019-02-28 18:45:15.367 [main] INFO  TestCases.HomePageTest - Test: ComingSoonBtn1Test == Passed
+2019-02-28 18:45:15.568 [main] INFO  TestCases.HomePageTest - Test: ComingSoonBtn2Test == Passed
+2019-02-28 18:45:15.843 [main] INFO  TestCases.HomePageTest - Test: EventTest == Passed
+2019-02-28 18:45:16.036 [main] INFO  TestCases.HomePageTest - Test: DateTest == Passed
+2019-02-28 18:45:16.253 [main] INFO  TestCases.HomePageTest - Test: LocationTest == Passed
+2019-02-28 18:45:16.470 [main] INFO  TestCases.HomePageTest - Test: AddressTest == Passed
+2019-02-28 18:45:16.669 [main] INFO  TestCases.HomePageTest - Test: FirstNameCaptionTest == Passed
+2019-02-28 18:45:16.859 [main] INFO  TestCases.HomePageTest - Test: FirstNameFieldTest == Passed
+2019-02-28 18:45:17.038 [main] INFO  TestCases.HomePageTest - Test: LastNameCaptionTest == Passed
+2019-02-28 18:45:17.228 [main] INFO  TestCases.HomePageTest - Test: LastNameFieldTest == Passed
+2019-02-28 18:45:17.430 [main] INFO  TestCases.HomePageTest - Test: EmailCaptionTest == Passed
+2019-02-28 18:45:17.662 [main] INFO  TestCases.HomePageTest - Test: EmailFieldTest == Passed
+2019-02-28 18:45:17.874 [main] INFO  TestCases.HomePageTest - Test: IntegerCaptionTest == Passed
+2019-02-28 18:45:18.122 [main] INFO  TestCases.HomePageTest - Test: IntegerFieldTest == Passed
+2019-02-28 18:45:18.410 [main] INFO  TestCases.HomePageTest - Test: OptionCaptionTest == Passed
+2019-02-28 18:45:18.675 [main] INFO  TestCases.HomePageTest - Test: Option1Test == Passed
+2019-02-28 18:45:18.904 [main] INFO  TestCases.HomePageTest - Test: Option2Test == Passed
+2019-02-28 18:45:19.092 [main] INFO  TestCases.HomePageTest - Test: Option3Test == Passed
+2019-02-28 18:45:19.313 [main] INFO  TestCases.HomePageTest - Test: PickOneCaptionTest == Passed
+2019-02-28 18:45:19.487 [main] INFO  TestCases.HomePageTest - Test: DropDownTest == Passed
+2019-02-28 18:45:19.683 [main] INFO  TestCases.HomePageTest - Test: AddCommentCaptionTest == Passed
+2019-02-28 18:45:19.861 [main] INFO  TestCases.HomePageTest - Test: CommentFieldTest == Passed
+2019-02-28 18:45:21.000 [main] INFO  TestCases.HomePageTest - Test: DummyRegisterTest == Passed
+2019-02-28 18:45:21.214 [main] INFO  TestCases.HomePageTest - Test: FNErrorMsgTest == Passed
+2019-02-28 18:45:21.455 [main] INFO  TestCases.HomePageTest - Test: LNErrorMsgTest == Passed
+2019-02-28 18:45:21.663 [main] INFO  TestCases.HomePageTest - Test: EmailErrorMsgTest == Passed
+2019-02-28 18:45:22.286 [main] INFO  TestCases.HomePageTest - Test: CheckboxTest == Passed
+2019-02-28 18:45:23.149 [main] INFO  TestCases.HomePageTest - Test: InvalidEmailErrorMsgTest == Passed
+2019-02-28 18:45:26.151 [main] INFO  TestCases.HomePageTest - Test: CorrectSignUpTest == Passed
