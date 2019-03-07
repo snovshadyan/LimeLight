@@ -24,8 +24,9 @@ public class HomePageTest extends TestBase {
 
 
     @BeforeMethod
-    public void  setup(){
+    public void  setup(ITestResult result){
         homepage = new HomePage();
+        log.info("Testing " + result.getMethod().getMethodName());
     }
 
 
