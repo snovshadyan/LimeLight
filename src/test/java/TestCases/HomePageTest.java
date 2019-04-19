@@ -46,7 +46,6 @@ public class HomePageTest extends TestBase {
     @Test(priority=2)
     public void HeaderTest() throws Exception{
 
-        log.info("Testing page header");
         Assert.assertTrue(homepage.verifyHeader());
 
     }
@@ -56,7 +55,6 @@ public class HomePageTest extends TestBase {
     @Test(priority=3)
     public void BannerTest() throws Exception{
 
-        log.info("Testing page banner");
         Assert.assertTrue(homepage.verifyBanner());
     }
 
@@ -64,7 +62,6 @@ public class HomePageTest extends TestBase {
     @Test(priority = 4)
     public void H1Test() throws Exception{
 
-        log.info("Testing H1 header");
         Assert.assertTrue(homepage.verifyH1Header());
     }
 
@@ -72,7 +69,6 @@ public class HomePageTest extends TestBase {
     @Test(priority = 5)
     public void NewJersyImgTest() throws Exception{
 
-        log.info("Testing NewJersey image");
         Assert.assertTrue(homepage.verifyNewJersyImg());
     }
 
@@ -80,7 +76,6 @@ public class HomePageTest extends TestBase {
     @Test(priority = 6)
     public void LosAngelesImgTest() throws Exception{
 
-        log.info("Testing LosAngeles image");
         Assert.assertTrue(homepage.verifyLosAngelesImg());
     }
 
@@ -88,7 +83,6 @@ public class HomePageTest extends TestBase {
     @Test(priority = 7)
     public void SanFranciscoImgTest() throws Exception{
 
-        log.info("Testing SanFrancisco image");
         Assert.assertTrue(homepage.verifySanFranciscoImg());
     }
 

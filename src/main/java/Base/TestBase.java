@@ -19,13 +19,13 @@ import java.util.concurrent.TimeUnit;
 public class TestBase {
 
     public static WebDriver driver;
-    public static String baseURL = "http://samplewebsite.limelightplatform.com/";
+    private static String baseURL = "http://samplewebsite.limelightplatform.com/";
 
-    static String ChromeDriverPath = ".\\WebDrivers\\chromedriver.exe";
-    static String FFDriverPath = ".\\WebDrivers\\geckodriver.exe";
+    private static String ChromeDriverPath = ".\\WebDrivers\\chromedriver.exe";
+    private static String FFDriverPath = ".\\WebDrivers\\geckodriver.exe";
 
-    public static String Browser;
-    public static String CT;
+    private static String Browser;
+    private static String CT;
     public static Properties prop;
 
 
@@ -70,14 +70,14 @@ public class TestBase {
 
 
 
-    private static WebDriver initChromeDriver() throws Exception {
+    private static WebDriver initChromeDriver()  {
 
         System.setProperty("webdriver.chrome.driver", ChromeDriverPath );
         driver = new ChromeDriver();
         return driver;
     }
 
-    private static WebDriver initFirefoxDriver() throws Exception{
+    private static WebDriver initFirefoxDriver() {
 
         System.setProperty("webdriver.gecko.driver", FFDriverPath);
         driver = new FirefoxDriver();

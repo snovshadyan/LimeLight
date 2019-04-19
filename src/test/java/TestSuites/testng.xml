@@ -18,9 +18,9 @@
     </test>
 
 
-<!--
 
-    <test name="Firefox Test" >
+
+<!--    <test name="Firefox Test" >
         <parameter name="browserType" value="Firefox"/>
 
         <classes>
@@ -29,6 +29,7 @@
     </test>
 
 -->
+
 
 
 </suite>
