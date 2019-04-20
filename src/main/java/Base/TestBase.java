@@ -27,9 +27,12 @@ public class TestBase {
     private static String Browser;
     private static String CT;
     public static Properties prop;
+    private static long startTime;
+    private static long endTime;
 
 
     private static Logger log = LogManager.getLogger(TestBase.class);
+
 
     public TestBase(){
 
@@ -85,13 +88,19 @@ public class TestBase {
     }
 
 
+    @BeforeSuite
+    public void BeforeSuite(){
+
+        CT = Calendar.getInstance().getTime().toString();
+        log.info("Starting LimeLight test " + CT + "\n");
+        startTime = System.currentTimeMillis();
+
+    }
 
 
     @Parameters({"browserType"})
     @BeforeClass
     public void initializeTestBaseSetup(@Optional("Chrome") String browserType) {
-        CT = Calendar.getInstance().getTime().toString();
-        log.info("Starting LimeLight test " + CT + "\n");
 
         try {
             setDriver(browserType);
@@ -107,10 +116,23 @@ public class TestBase {
 
     @AfterClass
     public void tearDown() {
+
+
         driver.quit();
+
+
     }
 
+    @AfterSuite
+    public void AfterSuite(){
 
+        CT = Calendar.getInstance().getTime().toString();
+        log.info("Finishing LimeLight test " + CT + "\n");
+        endTime = System.currentTimeMillis();
+        long duration = (endTime - startTime)/1000;
+        log.info("Test execution took "  + duration + " Seconds");
+
+    }
 
 
 }
