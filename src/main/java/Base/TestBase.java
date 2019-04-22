@@ -103,7 +103,7 @@ public class TestBase {
 
     @Parameters({"browserType"})
     @BeforeClass
-    public void initializeTestBaseSetup(@Optional("Chrome") String browserType) {
+    public void TestBaseSetup(@Optional("Chrome") String browserType) {
 
         try {
             setDriver(browserType);
