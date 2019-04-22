@@ -5,6 +5,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.*;
 import java.io.FileInputStream;
@@ -76,7 +77,9 @@ public class TestBase {
     private static WebDriver initChromeDriver()  {
 
         System.setProperty("webdriver.chrome.driver", ChromeDriverPath );
-        driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("disable-infobars");
+        driver = new ChromeDriver(options);
         return driver;
     }
 
@@ -117,10 +120,7 @@ public class TestBase {
     @AfterClass
     public void tearDown() {
 
-
         driver.quit();
-
-
     }
 
     @AfterSuite
