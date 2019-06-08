@@ -19,10 +19,10 @@ import java.util.concurrent.TimeUnit;
 
 public class TestBase {
 
-    public static WebDriver driver;
+    public static WebDriver driver = null;
     private static String baseURL = "http://samplewebsite.limelightplatform.com/";
 
-    private static String ChromeDriverPath = ".\\WebDrivers\\chromedriver.exe";
+    private static String ChromeDriverPath = ".\\WebDrivers\\chromedriver75.exe";
     private static String FFDriverPath = ".\\WebDrivers\\geckodriver.exe";
 
     private static String Browser;
@@ -55,7 +55,9 @@ public class TestBase {
 
         if(browserType.equalsIgnoreCase("Chrome")) {
             Browser = "Chrome";
-            driver = initChromeDriver();
+//            driver = initChromeDriver();
+            initChromeDriver();
+
         }else if (browserType.equalsIgnoreCase("Firefox")){
             Browser = "Firefox";
             driver = initFirefoxDriver();
@@ -80,13 +82,16 @@ public class TestBase {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("disable-infobars");
         driver = new ChromeDriver(options);
+
         return driver;
     }
 
     private static WebDriver initFirefoxDriver() {
 
         System.setProperty("webdriver.gecko.driver", FFDriverPath);
+
         driver = new FirefoxDriver();
+
         return driver;
     }
 
