@@ -19,19 +19,5 @@
 
 
 
-<!--
-
-    <test name="Firefox Test" >
-        <parameter name="browserType" value="Firefox"/>
-
-        <classes>
-            <class name="TestCases.HomePageTest"/>
-        </classes>
-    </test>
-
--->
-
-
-
 
 </suite>
