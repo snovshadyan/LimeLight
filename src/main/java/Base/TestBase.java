@@ -23,7 +23,7 @@ public class TestBase {
     private static String baseURL = "http://samplewebsite.limelightplatform.com/";
 
     private static String ChromeDriverPath = ".\\WebDrivers\\chromedriver75.exe";
-    private static String FFDriverPath = ".\\WebDrivers\\geckodriver.exe";
+    private static String FFDriverPath = ".\\WebDrivers\\geckodriver24.exe";
 
     private static String Browser;
     private static String CT;
@@ -55,12 +55,11 @@ public class TestBase {
 
         if(browserType.equalsIgnoreCase("Chrome")) {
             Browser = "Chrome";
-//            driver = initChromeDriver();
             initChromeDriver();
 
         }else if (browserType.equalsIgnoreCase("Firefox")){
             Browser = "Firefox";
-            driver = initFirefoxDriver();
+            initFirefoxDriver();
         }
 
         log.info("Launching " + Browser + " browser\n");
